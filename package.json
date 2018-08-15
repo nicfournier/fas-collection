@@ -1,10 +1,20 @@
 {
   "name": "fas-collection",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.8",
+  "description": "Testing external lib",
+  "private": false,
+  "main": "./dist/fas-collection.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name fas-collection ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
